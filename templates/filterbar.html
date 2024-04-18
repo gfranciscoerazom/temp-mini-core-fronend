@@ -1,0 +1,42 @@
+<!-- 
+    Todo en la misma línea
+    descripcion: str = Query(None),
+    fecha: str = Query(None),
+    latitud: str = Query(None),
+    longitud: str = Query(None),
+    publicacionId: int = Query(None),
+    tipo: str = Query(None)
+ -->
+<div>
+    <form method="GET" class="px-5 my-2">
+        <div class="row">
+            <!-- <div class="form-group col">
+                <input type="text" name="descripcion" placeholder="Descripción" class="form-control">
+            </div>
+            <div class="form-group col">
+                <input type="date" name="fecha" class="form-control">
+            </div>
+            <div class="form-group col">
+                <input type="text" name="latitud" placeholder="Latitud" class="form-control">
+            </div> -->
+            <input type="text" name="descripcion" placeholder="Descripción" class="form-control col">
+            <input type="date" name="fecha" class="form-control col">
+            <input type="text" name="latitud" placeholder="Latitud" class="form-control col">
+            <input type="text" name="longitud" placeholder="Longitud" class="form-control col">
+            <input type="number" name="publicacionId" placeholder="ID de publicación" class="form-control col">
+            <select name="tipo" class="form-control col">
+                <option value="">Select an option</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+            </select>
+            <button type="submit" class="btn btn-primary col">Filtrar</button>
+        </div>
+    </form>
+</div>

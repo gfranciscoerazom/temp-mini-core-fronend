@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- 
+      {
+    "descripcion": "tellus ac cursus commodo",
+    "fecha": "2024-04-12",
+    "latitud": "34.000000",
+    "longitud": "49.000000",
+    "publicacionId": 620,
+    "rutaImg": "image7.jpg",
+    "tipo": "C"
+  }
+ -->
+{% for publicacion in publicaciones %}
+<div class="card m-auto" style="width: 18rem;">
+    <!-- <img src="{{ publicacion.rutaImg }}" class="card-img-top" alt="Imagen de la publicación"> -->
+    <div class="card-body">
+        <h5 class="card-title">{{ publicacion.descripcion }}</h5>
+        <p class="card-text">Fecha: {{ publicacion.fecha }}</p>
+        <p class="card-text">Latitud: {{ publicacion.latitud }}</p>
+        <p class="card-text">Longitud: {{ publicacion.longitud }}</p>
+        <p class="card-text">Tipo: {{ publicacion.tipo }}</p>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
